@@ -34,7 +34,7 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 #bindsym $mod+d exec --no-startup-id dmenu_recency
-bindsym $mod+d exec "rofi -show run"
+bindsym $mod+d exec "rofi -modi drun,run -show drun -show-icons"
 
 # launch categorized menu
 bindsym $mod+c exec --no-startup-id morc_menu
@@ -52,8 +52,8 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 ################################################################################################
 
 # Screen brightness controls
- bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
- bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 5; notify-send 'brightness up'"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 5; notify-send 'brightness down'"
 
 # Start Applications
 
@@ -280,8 +280,9 @@ bindsym $mod+9 exec --no-startup-id betterlockscreen -l blur
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always --no-startup-id autorandr --change
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
-exec_always --no-startup-id polybar main
+exec --no-startup-id nitrogen --restore; sleep 1
+#compton -b
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 #exec_always --no-startup-id ~/.screenlayout/1x2Home.sh
 exec --no-startup-id xfce4-power-manager
 exec_always --no-startup-id volumeicon

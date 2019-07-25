@@ -7,7 +7,8 @@ configuration {
 * {
     lines: 15;
     columns: 1;
-    background-color: #383c4a95;
+    background-color: #383c4a;
+    
     border-color: #00000000;
     text-color: #EFEFEF;
     font: "SF Pro Text 16";
@@ -16,9 +17,9 @@ configuration {
 #window {
     border: 0;
     border-radius: 4px;
-    padding: 40;
-    width: 30%;
-    height: 50%;
+    padding: 25%;
+    width: 100%;
+    height: 100%;
 }
  
 #mainbox {

@@ -18,7 +18,7 @@ XTerm*selectToClipboard: true
 *foreground:                      #d8d8d8
 *fading:                          8
 *fadeColor:                       black
-*cursorColor:                     #1ABB9B
+*cursorColor:                     #eceff1
 *pointerColorBackground:          #2B2C2B
 *pointerColorForeground:          #16A085
 
@@ -28,32 +28,32 @@ XTerm*selectToClipboard: true
 *.cursorColor:  #eceff1
 
 ! black
-*.color0:       #263238
-*.color8:       #37474f
+*.color0:       #383c4a
+*.color8:       #7c818c
 
 ! red
-*.color1:       #ff9800
-*.color9:       #ffa74d
+*.color1:       #ed6a5a
+*.color9:       #f5a89f
 
 ! green
-*.color2:       #8bc34a
-*.color10:      #9ccc65
+*.color2:       #568259
+*.color10:      #7ca87f
 
 ! yellow
-*.color3:       #ffc107
-*.color11:      #ffa000
+*.color3:       #f1ef80
+*.color11:      #f6f5ae
 
 ! blue
-*.color4:       #03a9f4
-*.color12:      #81d4fa
+*.color4:       #2e86ab
+*.color12:      #54acd1
 
 ! magenta
-*.color5:       #e91e63
-*.color13:      #ad1457
+*.color5:       #a34654
+*.color13:      #BB616E
 
 ! cyan
-*.color6:       #009688
-*.color14:      #26a69a
+*.color6:       #61bbae
+*.color14:      #96d2c9
 
 ! white
 *.color7:       #cfd8dc
@@ -72,7 +72,7 @@ URxvt.letterSpace: 1
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [80]#383c4a
+URxvt.background:                 #404552
 !URxvt.background:		  rgba:0000/0000/0200/c800
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false

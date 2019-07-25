@@ -1,9 +1,11 @@
-name=main
-pkill polybar
+killall -q polybar
+
+while pgrep -x polybar >/dev/null; do sleep 1; done
+
 if type "xrandr"; then
-  for monitor in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=${monitor} polybar --reload ${name}&
+  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+    MONITOR=$m polybar --reload main &
   done
 else
-  polybar --reload ${name} &
+  polybar --reload main &
 fi
