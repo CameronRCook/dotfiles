@@ -14,7 +14,7 @@ screenchange-reload = true
 width = 100%
 height = 27
 fixed-center = true
-monitor = ${env:MONITOR:}
+monitor = eDP1
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -35,7 +35,7 @@ font-0 = Hack Nerd Font:pixelsize=14;1
 
 modules-left = i3 xwindow tray
 modules-center = date time
-modules-right = filesystem xbacklight battery settings
+modules-right = cpu memory filesystem xbacklight battery settings
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -200,7 +200,7 @@ menu-0-1-exec = blueman-manager
 menu-0-2 = 
 menu-0-2-exec = menu-open-3 
 menu-0-3 = 墳
-menu-0-3-exec = "terminal -e 'alsamixer'"
+menu-0-3-exec = pavucontrol
 menu-0-4 = 直
 menu-0-4-exec = nm-connection-editor 
 

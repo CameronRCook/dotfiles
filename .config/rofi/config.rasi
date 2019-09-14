@@ -9,17 +9,17 @@ configuration {
     columns: 1;
     background-color: #383c4a;
     
-    border-color: #00000000;
+    border-color: #BB616E;
     text-color: #EFEFEF;
     font: "SF Pro Text 16";
 }
  
 #window {
-    border: 0;
-    border-radius: 4px;
-    padding: 25%;
-    width: 100%;
-    height: 100%;
+    border: 5;
+    border-radius: 10px;
+    padding: 5px;
+    width: 75%;
+    height: 60%;
 }
  
 #mainbox {
@@ -28,7 +28,7 @@ configuration {
     spacing: 10px;
     /*margin: 20%;*/
     padding: 30px 0;
-    border: 1px;
+    border: 0px;
     border-color: @base0D;
 }
  
@@ -57,7 +57,7 @@ configuration {
  
 #inputbar {
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
-    background-color: #00000000;
+    background-color: #404552;
 }
  
 #case-indicator {
