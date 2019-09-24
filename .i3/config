@@ -45,7 +45,6 @@ bindsym $mod+c exec --no-startup-id morc_menu
 
 #exec_always --no-startup-id volumeicon
 #bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-exec --no-startup-id pulseaudio --start
 #exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec pavucontrol
 
@@ -284,6 +283,7 @@ bindsym $mod+9 exec --no-startup-id betterlockscreen -l blur
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec_always --no-startup-id pkill pulseaudio; pulseaudio --start
 exec_always --no-startup-id autorandr --change
 exec --no-startup-id nitrogen --restore; sleep 1
 #compton -b
